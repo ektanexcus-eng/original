@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ekta NexCus – एकता नेक्सकस</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Noto+Sans+Devanagari:wght@400;600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--surf:#fff;--ink:#14213d;--mute:#4b5873;--line:#d9deea;--indigo:#1b2a5c;--saf:#f29f05;--leaf:#2e7d5b;--onind:#fff;--hdr:rgba(246,247,251,.94);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1426;--surf:#161e36;--ink:#eef1f8;--mute:#aab3c9;--line:#2a3555;--indigo:#9fb2ff;--saf:#ffb733;--leaf:#5fcf9d;--onind:#0e1426;--hdr:rgba(14,20,38,.94);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1426;--surf:#161e36;--ink:#eef1f8;--mute:#aab3c9;--line:#2a3555;--indigo:#9fb2ff;--saf:#ffb733;--leaf:#5fcf9d;--onind:#0e1426;--hdr:rgba(14,20,38,.94);color-scheme:dark}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+html[lang=en] .mr,html[lang=mr] .en{display:none}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Source Sans 3","Noto Sans Devanagari",system-ui,sans-serif}
+html[lang=mr] body{line-height:1.8}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hdr);z-index:10}
+h1,h2,h3{font-family:"Bricolage Grotesque","Noto Sans Devanagari",sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.3rem,6vw,4.3rem);font-weight:800}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:800}
+p{margin:0 0 1em;max-width:68ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saf);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--hdr);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{max-width:1120px;margin:auto;padding:10px 20px;display:flex;align-items:center;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font:800 1.25rem "Bricolage Grotesque",sans-serif;text-decoration:none;color:var(--indigo);margin-right:auto}
+.logo svg{width:34px;height:34px}
+nav{display:flex;gap:16px;font-size:.93rem}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--saf);color:#14213d;font:600 1rem inherit;font-family:inherit;padding:9px 18px;border-radius:999px;text-decoration:none;border:0;white-space:nowrap;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor}
+.lang{background:transparent;border:2px solid var(--indigo);color:var(--indigo);padding:6px 12px}
+@media(max-width:900px){nav{display:none}.btn{padding:8px 12px;font-size:.9rem}.bar{gap:8px;padding:10px 14px}}
+@media(max-width:420px){.logo b{display:none}}
+section{padding:68px 20px}
+.w{max-width:1120px;margin:auto}
+.hero .w{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;align-items:center}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}}
+.lede{font-size:1.2rem;color:var(--mute)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.clock{display:block;width:100%;max-width:360px;margin:auto}
+.t{fill:none;stroke-width:26}
+.cap{text-align:center;color:var(--mute);font-size:.95rem;margin-top:10px}
+.trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.trust span{background:var(--surf);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.92rem;font-weight:600}
+.trust span::before{content:"✓ ";color:var(--leaf)}
+.band{background:var(--indigo);color:var(--onind)}
+.band p{color:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:26px}
+.card{background:var(--surf);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card p{margin:0;color:var(--mute);font-size:1rem}
+.card.k{border-top:5px solid var(--saf)}.card.g{border-top:5px solid var(--leaf)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+ul.l{padding-left:1.2em;margin:0}ul.l li{margin-bottom:.4em}
+.flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.flow b{background:var(--surf);border:1px solid var(--line);border-radius:999px;padding:7px 16px}
+.yt{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:32px;border-left:8px solid #e62117}
+@media(max-width:700px){.yt{grid-template-columns:1fr;padding:22px}}
+.play{width:120px;height:84px;background:#e62117;border-radius:22px;display:grid;place-items:center}
+.play::after{content:"";border-left:30px solid #fff;border-top:18px solid transparent;border-bottom:18px solid transparent;margin-left:8px}
+.sdg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:26px}
+.sdg div{display:flex;gap:12px;align-items:center;background:var(--c);color:#fff;border-radius:10px;padding:12px 14px;font-weight:600;line-height:1.3}
+.sdg b{font:800 1.8rem "Bricolage Grotesque",sans-serif;min-width:2ch}
+.note{border-left:4px solid var(--saf);background:var(--surf);color:var(--mute);padding:14px 18px;border-radius:0 10px 10px 0;margin-top:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{background:var(--surf);color:var(--indigo);border:1px solid var(--line);border-radius:8px;padding:5px 14px;font-weight:600}
+.row{display:block;padding:13px 0;border-bottom:1px solid rgba(128,128,128,.35);text-decoration:none;font-size:1.1rem}
+.row small{display:block;opacity:.75}
+footer{padding:28px 20px;color:var(--mute);font-size:.9rem;text-align:center;border-top:1px solid var(--line)}
+footer p{margin:0 auto 6px}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#top" aria-label="Ekta NexCus">
+<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="var(--saf)" stroke-width="4"/><path d="M12 12h16M12 20h12M12 28h16M12 12v16" stroke="var(--indigo)" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+<b>Ekta NexCus</b></a>
+<nav>
+<a href="#about"><span class="en">About</span><span class="mr">आमच्याबद्दल</span></a>
+<a href="#services"><span class="en">Services</span><span class="mr">सेवा</span></a>
+<a href="#youtube">YouTube</a>
+<a href="#sdg">SDG</a>
+<a href="#contact"><span class="en">Contact</span><span class="mr">संपर्क</span></a>
+</nav>
+<button class="btn lang" id="lang" type="button" aria-label="Change language"><span class="en">मराठी</span><span class="mr">English</span></button>
+<a class="btn" href="https://forms.gle/vKXTdJoZ2myxKkct5" target="_blank" rel="noopener"><span class="en">Share your opinion</span><span class="mr">तुमचे मत द्या</span></a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="w">
+<div>
+<h1><span class="en">Work that leaves room for life.</span><span class="mr">असे काम, जे जीवनासाठी वेळ देते.</span></h1>
+<p class="lede"><span class="en">Ekta NexCus is a proposed research and implementation enterprise studying workforce wellbeing, employment, workplace practice and community livelihoods, starting in Ichalkaranji and the Kolhapur region of Maharashtra.</span><span class="mr">एकता नेक्सकस हा कामगार कल्याण, रोजगार, कामाच्या ठिकाणच्या पद्धती आणि समुदायाच्या उपजीविकेचा अभ्यास करणारा प्रस्तावित संशोधन व अंमलबजावणी उपक्रम आहे. सुरुवात इचलकरंजी आणि कोल्हापूर परिसरातून.</span></p>
+<p><strong>Happy India 2047:</strong> <span class="en">development measured by meaningful work, dignity, opportunity and time for family and community.</span><span class="mr">अर्थपूर्ण काम, सन्मान, संधी आणि कुटुंब व समाजासाठी वेळ यांवर मोजला जाणारा विकास.</span></p>
+<div class="cta"><a class="btn" href="https://forms.gle/vKXTdJoZ2myxKkct5" target="_blank" rel="noopener"><span class="en">Share your opinion</span><span class="mr">तुमचे मत द्या</span></a><a class="btn alt" href="#services"><span class="en">See our services</span><span class="mr">आमच्या सेवा पहा</span></a></div>
+<div class="trust"><span><i class="en">Evidence first</i><i class="mr">पुराव्यावर आधारित</i></span><span><i class="en">Anonymous surveys</i><i class="mr">गोपनीय सर्वेक्षण</i></span><span><i class="en">Legal review</i><i class="mr">कायदेशीर तपासणी</i></span><span><i class="en">Honest reporting</i><i class="mr">प्रामाणिक अहवाल</i></span></div>
+</div>
+<div>
+<svg class="clock" viewBox="0 0 200 200" role="img" aria-label="24 hours in four six-hour shifts">
+<circle class="t" cx="100" cy="100" r="70" style="stroke:var(--line)" opacity=".5"/>
+<g class="t" stroke-dasharray="104 335.8" transform="rotate(-90 100 100)">
+<circle class="t" cx="100" cy="100" r="70" style="stroke:var(--saf)"/>
+<circle class="t" cx="100" cy="100" r="70" style="stroke:var(--leaf)" transform="rotate(90 100 100)"/>
+<circle class="t" cx="100" cy="100" r="70" style="stroke:var(--indigo)" transform="rotate(180 100 100)"/>
+<circle class="t" cx="100" cy="100" r="70" style="stroke:var(--mute)" transform="rotate(270 100 100)"/>
+</g>
+<text x="100" y="105" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="30" fill="var(--ink)">6h × 4</text>
+</svg>
+<p class="cap"><span class="en">Research question: can shorter shifts keep output and improve wellbeing?</span><span class="mr">संशोधन प्रश्न: कमी तासांच्या शिफ्टमध्ये उत्पादन टिकून कल्याण सुधारेल का?</span></p>
+</div>
+</div></section>
+
+<section id="about" class="band"><div class="w">
+<h2><span class="en">Five connected areas</span><span class="mr">पाच जोडलेली क्षेत्रे</span></h2>
+<p><span class="en">We connect businesses, workers, jobseekers, researchers, social organisations, agricultural communities and public institutions through research, practical programmes and measurable impact.</span><span class="mr">आम्ही उद्योग, कामगार, नोकरी शोधणारे, संशोधक, सामाजिक संस्था, शेतकरी समुदाय आणि सार्वजनिक संस्था यांना संशोधन, प्रत्यक्ष कार्यक्रम आणि मोजता येणाऱ्या परिणामांद्वारे जोडतो.</span></p>
+<div class="grid">
+<div class="card"><h3><span class="en">Research</span><span class="mr">संशोधन</span></h3><p><span class="en">Working hours, productivity, employment access, socio-economic outcomes.</span><span class="mr">कामाचे तास, उत्पादकता, रोजगाराची उपलब्धता, सामाजिक-आर्थिक परिणाम.</span></p></div>
+<div class="card"><h3><span class="en">Industry solutions</span><span class="mr">उद्योग उपाय</span></h3><p><span class="en">Evidence-based employee wellbeing programmes.</span><span class="mr">पुराव्यावर आधारित कर्मचारी कल्याण कार्यक्रम.</span></p></div>
+<div class="card"><h3><span class="en">Livelihood development</span><span class="mr">उपजीविका विकास</span></h3><p><span class="en">Linking jobseekers, workers, employers and trainers.</span><span class="mr">नोकरी शोधणारे, कामगार, नियोक्ते आणि प्रशिक्षक यांना जोडणे.</span></p></div>
+<div class="card"><h3><span class="en">Social innovation</span><span class="mr">सामाजिक नवोन्मेष</span></h3><p><span class="en">For women, youth, farm labourers and small farmers.</span><span class="mr">महिला, युवक, शेतमजूर आणि लहान शेतकऱ्यांसाठी.</span></p></div>
+<div class="card"><h3><span class="en">Impact measurement</span><span class="mr">परिणाम मापन</span></h3><p><span class="en">Indicators for wellbeing, job quality, retention and family time.</span><span class="mr">कल्याण, नोकरीचा दर्जा, टिकाव आणि कौटुंबिक वेळ यांचे निर्देशक.</span></p></div>
+</div>
+</div></section>
+
+<section id="services"><div class="w">
+<h2><span class="en">What we offer first</span><span class="mr">आम्ही सुरुवातीला काय देतो</span></h2>
+<div class="grid">
+<div class="card k"><h3><span class="en">Workforce Wellbeing Assessment</span><span class="mr">कामगार कल्याण मूल्यांकन</span></h3><p><span class="en">Anonymised employee survey, report, recommendations, action plan and follow-up assessment.</span><span class="mr">गोपनीय कर्मचारी सर्वेक्षण, अहवाल, शिफारसी, कृती आराखडा आणि पाठपुरावा मूल्यांकन.</span></p></div>
+<div class="card k"><h3><span class="en">Workforce and Livelihood Research</span><span class="mr">कामगार व उपजीविका संशोधन</span></h3><p><span class="en">Local employment needs, skills gaps and barriers to work, for manufacturers, MSMEs, NGOs and institutions.</span><span class="mr">स्थानिक रोजगार गरजा, कौशल्य तफावत आणि अडथळे, उत्पादक, MSME, NGO व संस्थांसाठी.</span></p></div>
+<div class="card k"><h3><span class="en">Employee Volunteering</span><span class="mr">कर्मचारी स्वयंसेवा</span></h3><p><span class="en">Skills-based volunteering, mentoring and education support under clear agreements.</span><span class="mr">स्पष्ट करारांनुसार कौशल्याधारित स्वयंसेवा, मार्गदर्शन आणि शैक्षणिक मदत.</span></p></div>
+</div>
+<div class="flow"><b>Research</b><b>Pilot</b><b>Measure</b><b>Improve</b><b>Commercialise</b><b>Scale</b></div>
+</div></section>
+
+<section id="sixhour" class="band"><div class="w">
+<h2><span class="en">Six-hour workday pilot</span><span class="mr">सहा तासांचा कामाचा दिवस: प्रायोगिक अभ्यास</span></h2>
+<p><span class="en">A research pilot with a willing manufacturing employer in the Ichalkaranji region, not a claim that shorter days work everywhere. Four six-hour shifts mean 24 hours of coverage before handovers and breaks, so cost and feasibility are tested workplace by workplace, after legal and HR review.</span><span class="mr">इचलकरंजी परिसरातील इच्छुक उत्पादक नियोक्त्यासोबतचा संशोधन प्रयोग; कमी तासांचा दिवस सर्वत्र चालतो असा दावा नाही. चार सहा-तासांच्या शिफ्ट म्हणजे हस्तांतरण व विश्रांतीपूर्वी २४ तासांचे कव्हरेज, म्हणून खर्च आणि व्यवहार्यता प्रत्येक ठिकाणी, कायदेशीर व HR तपासणीनंतर तपासली जाते.</span></p>
+<div class="two"><ul class="l">
+<li><span class="en">Output per paid hour and daily capacity</span><span class="mr">प्रति पगारी तास उत्पादन व दैनिक क्षमता</span></li>
+<li><span class="en">Absenteeism, turnover, satisfaction</span><span class="mr">गैरहजेरी, कर्मचारी गळती, समाधान</span></li>
+<li><span class="en">Fatigue, stress, work-life balance</span><span class="mr">थकवा, ताण, कामाचे-जीवनाचे संतुलन</span></li></ul>
+<ul class="l">
+<li><span class="en">Extra staffing, handover and training cost</span><span class="mr">अतिरिक्त कर्मचारी, हस्तांतरण व प्रशिक्षण खर्च</span></li>
+<li><span class="en">Permanent vs contract workers</span><span class="mr">कायमस्वरूपी विरुद्ध कंत्राटी कामगार</span></li>
+<li><span class="en">Can wages be maintained at acceptable cost?</span><span class="mr">वेतन स्वीकारार्ह खर्चात टिकवता येईल का?</span></li></ul></div>
+</div></section>
+
+<section id="youtube"><div class="w">
+<div class="yt">
+<div class="play" aria-hidden="true"></div>
+<div>
+<h2><span class="en">Watch Ekta NexCus on YouTube</span><span class="mr">YouTube वर एकता नेक्सकस पहा</span></h2>
+<p><span class="en">Follow our research updates, community stories and conversations about work and wellbeing.</span><span class="mr">आमचे संशोधन अपडेट, समुदायाच्या कथा आणि काम व कल्याण यावरील संवाद पाहा.</span></p>
+<a class="btn" href="https://www.youtube.com/@ektanexcus" target="_blank" rel="noopener"><span class="en">Open our channel</span><span class="mr">आमचे चॅनल उघडा</span></a>
+</div></div>
+</div></section>
+
+<section id="farm" class="band"><div class="w">
+<h2><span class="en">Agriculture and rural livelihoods</span><span class="mr">शेती आणि ग्रामीण उपजीविका</span></h2>
+<p><span class="en">We start with the human and livelihood side of farming: labourers, small farmers, women, producer groups, cooperatives and rural youth. A pilot in a few Sangli–Kolhapur villages will run a baseline survey, map seasonal work and skills, connect people with qualified local partners, track outcomes and publish findings and limitations.</span><span class="mr">आम्ही शेतीच्या मानवी व उपजीविकेच्या बाजूपासून सुरुवात करतो: मजूर, लहान शेतकरी, महिला, उत्पादक गट, सहकारी संस्था आणि ग्रामीण युवक. सांगली–कोल्हापूरमधील काही गावांत प्राथमिक सर्वेक्षण, हंगामी काम व कौशल्यांचे नकाशांकन, पात्र स्थानिक भागीदारांशी जोडणी, परिणामांचा मागोवा आणि निष्कर्ष व मर्यादा प्रकाशित केल्या जातील.</span></p>
+</div></section>
+
+<section id="partners"><div class="w">
+<h2><span class="en">Partnerships and CSR</span><span class="mr">भागीदारी आणि CSR</span></h2>
+<div class="grid">
+<div class="card g"><h3><span class="en">Commercial contracts</span><span class="mr">व्यावसायिक करार</span></h3><p><span class="en">Fees for defined professional services and programme delivery.</span><span class="mr">निश्चित व्यावसायिक सेवा व कार्यक्रम अंमलबजावणीसाठी शुल्क.</span></p></div>
+<div class="card g"><h3><span class="en">CSR funding</span><span class="mr">CSR निधी</span></h3><p><span class="en">Only for eligible activities. A private limited company is not automatically an eligible CSR implementing agency; we follow Ministry of Corporate Affairs rules.</span><span class="mr">फक्त पात्र उपक्रमांसाठी. खाजगी मर्यादित कंपनी आपोआप पात्र CSR अंमलबजावणी संस्था ठरत नाही; आम्ही कॉर्पोरेट व्यवहार मंत्रालयाचे नियम पाळतो.</span></p></div>
+</div>
+</div></section>
+
+<section id="sdg" class="band"><div class="w">
+<h2><span class="en">Sustainable Development Goals</span><span class="mr">शाश्वत विकास ध्येये (SDG)</span></h2>
+<p><span class="en">We align our work with 13 of the 17 goals and document how each activity connects to its goal.</span><span class="mr">आम्ही १७ पैकी १३ ध्येयांशी आमचे काम जोडतो आणि प्रत्येक उपक्रमाचा संबंध नोंदवतो.</span></p>
+<div class="sdg">
+<div style="--c:#c4182f"><b>1</b><span><i class="en">No Poverty</i><i class="mr">गरिबी निर्मूलन</i></span></div>
+<div style="--c:#9a6d12"><b>2</b><span><i class="en">Zero Hunger</i><i class="mr">शून्य भूक</i></span></div>
+<div style="--c:#2d8a2f"><b>3</b><span><i class="en">Good Health and Well-being</i><i class="mr">उत्तम आरोग्य आणि कल्याण</i></span></div>
+<div style="--c:#b01d2d"><b>4</b><span><i class="en">Quality Education</i><i class="mr">दर्जेदार शिक्षण</i></span></div>
+<div style="--c:#d2371f"><b>5</b><span><i class="en">Gender Equality</i><i class="mr">लैंगिक समानता</i></span></div>
+<div style="--c:#9b1c40"><b>8</b><span><i class="en">Decent Work and Economic Growth</i><i class="mr">सन्माननीय काम आणि आर्थिक वाढ</i></span></div>
+<div style="--c:#c7501a"><b>9</b><span><i class="en">Industry, Innovation and Infrastructure</i><i class="mr">उद्योग, नवोन्मेष आणि पायाभूत सुविधा</i></span></div>
+<div style="--c:#c71a73"><b>10</b><span><i class="en">Reduced Inequalities</i><i class="mr">असमानता कमी करणे</i></span></div>
+<div style="--c:#b7701a"><b>11</b><span><i class="en">Sustainable Cities and Communities</i><i class="mr">शाश्वत शहरे आणि समुदाय</i></span></div>
+<div style="--c:#8a6a1a"><b>12</b><span><i class="en">Responsible Consumption and Production</i><i class="mr">जबाबदार उपभोग आणि उत्पादन</i></span></div>
+<div style="--c:#3a7d44"><b>13</b><span><i class="en">Climate Action</i><i class="mr">हवामान कृती</i></span></div>
+<div style="--c:#136a9b"><b>16</b><span><i class="en">Peace, Justice and Strong Institutions</i><i class="mr">शांतता, न्याय आणि सक्षम संस्था</i></span></div>
+<div style="--c:#1f4a75"><b>17</b><span><i class="en">Partnerships for the Goals</i><i class="mr">ध्येयांसाठी भागीदारी</i></span></div>
+</div>
+</div></section>
+
+<section id="trust"><div class="w">
+<h2><span class="en">Our promise to build trust</span><span class="mr">विश्वास निर्माण करण्याचे आमचे वचन</span></h2>
+<div class="grid">
+<div class="card"><h3><span class="en">Evidence before claims</span><span class="mr">दाव्यांपूर्वी पुरावा</span></h3><p><span class="en">We test ideas in small pilots and share results, including limitations.</span><span class="mr">आम्ही कल्पना लहान प्रयोगांत तपासतो आणि मर्यादांसह निकाल सांगतो.</span></p></div>
+<div class="card"><h3><span class="en">Respect for people</span><span class="mr">माणसांचा आदर</span></h3><p><span class="en">Surveys are anonymised; worker wellbeing comes first.</span><span class="mr">सर्वेक्षणे गोपनीय असतात; कामगारांचे कल्याण सर्वप्रथम.</span></p></div>
+<div class="card"><h3><span class="en">Legal and ethical care</span><span class="mr">कायदेशीर व नैतिक काळजी</span></h3><p><span class="en">Legal and HR review before any workplace trial.</span><span class="mr">कोणत्याही कामाच्या ठिकाणच्या प्रयोगापूर्वी कायदेशीर व HR तपासणी.</span></p></div>
+<div class="card"><h3><span class="en">Clear money, clear roles</span><span class="mr">स्पष्ट निधी, स्पष्ट भूमिका</span></h3><p><span class="en">Service fees and CSR funding are kept separate.</span><span class="mr">सेवा शुल्क आणि CSR निधी वेगळे ठेवले जातात.</span></p></div>
+</div>
+</div></section>
+
+<section id="contact" class="band"><div class="w">
+<h2><span class="en">Tell us what you think</span><span class="mr">तुमचे मत आम्हाला सांगा</span></h2>
+<p><span class="en">Your opinion shapes what we research first.</span><span class="mr">तुमच्या मतानुसार आम्ही कोणते संशोधन आधी करायचे ते ठरते.</span></p>
+<div class="cta"><a class="btn" href="https://forms.gle/vKXTdJoZ2myxKkct5" target="_blank" rel="noopener"><span class="en">Share your opinion</span><span class="mr">तुमचे मत द्या</span></a></div>
+<div style="margin-top:24px;max-width:560px">
+<a class="row" href="https://wa.me/919021891512" target="_blank" rel="noopener"><small>WhatsApp</small>+91 90218 91512</a>
+<a class="row" href="tel:+919021891512"><small><i class="en">Phone</i><i class="mr">फोन</i></small>+91 90218 91512</a>
+<a class="row" href="mailto:ektanexcus@gmail.com"><small><i class="en">Email</i><i class="mr">ईमेल</i></small>ektanexcus@gmail.com</a>
+<a class="row" href="https://www.youtube.com/@ektanexcus" target="_blank" rel="noopener"><small>YouTube</small>youtube.com/@ektanexcus</a>
+</div>
+</div></section>
+</main>
+
+<footer>
+<p><strong>Ekta NexCus</strong> – <span class="en">Research · Workforce · Livelihood · Wellbeing · Socio-Economic Growth</span><span class="mr">संशोधन · कामगार · उपजीविका · कल्याण · सामाजिक-आर्थिक विकास</span></p>
+<p><span class="en">Ekta NexCus Private Limited is a proposed structure; listed services are proposed segments, not a statement of current registration or authorisation.</span><span class="mr">एकता नेक्सकस प्रायव्हेट लिमिटेड ही प्रस्तावित रचना आहे; नमूद सेवा प्रस्तावित आहेत, सध्याची नोंदणी किंवा परवानगी असल्याचे विधान नाही.</span></p>
+</footer>
+<script>
+(function(){var h=document.documentElement,k="ekta-lang";
+function set(l){h.lang=l;try{localStorage.setItem(k,l)}catch(e){}}
+try{var s=localStorage.getItem(k);if(s==="mr"||s==="en")h.lang=s}catch(e){}
+document.getElementById("lang").addEventListener("click",function(){set(h.lang==="en"?"mr":"en")});
+})();
+</script>
+</body>
+</html>
